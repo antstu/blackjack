@@ -8,6 +8,7 @@ public class Deck {
     private Card[] cards;
     private ArrayList<Integer> usedCards = new ArrayList<Integer>();
     private char[] suitList = new char[]{'♠', '♦', '♥', '♣'};
+    private static int noGamesPlayed = 0;
 
     public Deck() {
 
@@ -26,6 +27,7 @@ public class Deck {
     public void deal(Player player) {
 
         int rand = (int) (Math.random()*(52));
+        noGamesPlayed++;
 
         if(usedCards.contains(rand)){
             do{
@@ -50,6 +52,7 @@ public class Deck {
         return "Deck{" +
                 "cards=" + Arrays.toString(cards) +
                 ", usedCards=" + usedCards +
+                ", Number of Games Played=" + noGamesPlayed +
                 '}';
     }
 }

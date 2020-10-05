@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BlackjackController {
 
+
     public static void main(String[] args) {
 
         BlackjackController controller = new BlackjackController();
@@ -49,15 +50,17 @@ public class BlackjackController {
 
             if (user.getHand().greaterThan21() == true) {
                 System.out.println("You busted.");
-
+                computer.setGamesWon(computer.getGamesWon() + 1);
             }
             else if (computer.getHand().greaterThan21() == true) {
                 System.out.println("Computer busted.");
                 win = true;
+                user.setGamesWon(user.getGamesWon() + 1);
             }
             else if(computer.getHand().getHandValue() < user.getHand().getHandValue()) {
                 System.out.println("You win!");
                 win = true;
+                user.setGamesWon(user.getGamesWon() + 1);
             }
             else if (computer.getHand().getHandValue() == user.getHand().getHandValue()) {
                 System.out.println("Split pot");
@@ -65,6 +68,7 @@ public class BlackjackController {
             }
             else {
                 System.out.println("You lose");
+                computer.setGamesWon(computer.getGamesWon() + 1);
             }
 
             if (win) {

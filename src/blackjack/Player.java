@@ -7,6 +7,7 @@ public class Player {
     private int potValue;
     private int money;
     private int bet;
+    private int gamesWon = 0;
 
 
 
@@ -57,6 +58,14 @@ public class Player {
         return bet;
     }
 
+    public void setGamesWon(int gamesWon) {
+        this.gamesWon = gamesWon;
+    }
+
+    public int getGamesWon() {
+        return gamesWon;
+    }
+
     public void setBet(int bet) {
         this.bet = bet;
     }
@@ -68,6 +77,7 @@ public class Player {
                 "name='" + name + '\'' +
                 ", hand=" + hand +
                 ", potValue=" + potValue +
+                ", Games won=" + gamesWon +
                 '}';
     }
 }
