@@ -3,6 +3,12 @@ package src.blackjack;
 
 public class Card {
 
+    /**
+     * Has most important features of card: suit, value
+     * getCardValue returns the corresponding blackjack value of card
+     *
+     */
+
     private char suit;
 
     private int cardValue;

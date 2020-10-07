@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 public class BlackjackController {
 
+    /**
+     * Starts a game between one person and computer(dealer)
+     * Player enters a string name
+     * Player enters amount he/she wants to play with
+     * Player has option to bplace a bet at the start of each round
+     * Player has the option to continue playing or quit after each game, unless he/she doesn't have any money
+     *
+     */
+
 
     public static void main(String[] args) {
 

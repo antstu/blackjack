@@ -4,15 +4,28 @@ import java.util.ArrayList;
 
 public class Hand {
 
+    /**
+     * Has features of a person's hand when playing blackjack
+     *
+     */
+
     private ArrayList<Card> cards = new ArrayList<>();
     private int handValue;
     private Boolean hidden;
 
 
+    /**
+     * Resets the hand value of players hand, called when a new game is started
+     */
+
     public void resetCards() {
         cards = new ArrayList<>();
         handValue = 0;
     }
+
+    /**
+     * Checks to see whether or not card values are greater than 21
+     */
 
     public boolean greaterThan21(){
         if(handValue > 21)

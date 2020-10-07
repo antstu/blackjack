@@ -2,6 +2,11 @@ package src.blackjack;
 
 public class Player {
 
+
+    /**
+     * Features of a person when playing blackjack
+     */
+
     private String name;
     private Hand hand;
     private int potValue;

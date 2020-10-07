@@ -5,6 +5,12 @@ import java.util.Arrays;
 
 public class Deck {
 
+    /**
+     * A new deck is created at the beginning of the program
+     * the Deck is not shuffled, a random card is dealt from deck when deal() is called
+     *
+     */
+
     private Card[] cards;
     private ArrayList<Integer> usedCards = new ArrayList<Integer>();
     private char[] suitList = new char[]{'♠', '♦', '♥', '♣'};
